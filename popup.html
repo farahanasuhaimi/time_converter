@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <h1>Time Zone Converter</h1>
+    
+    <label for="date-time-input">Enter a Date and Time:</label>
+    <input type="datetime-local" id="date-time-input" required>
+    
+    <label for="source-timezone">Source Time Zone:</label>
+    <select id="source-timezone">
+      <option value="UTC">UTC</option>
+      <option value="GMT">GMT</option>
+      <!-- Add more options as needed -->
+    </select>
+    
+    <label for="target-timezone">Target Time Zone:</label>
+    <select id="target-timezone">
+      <option value="Asia/Singapore">Asia/Singapore</option>
+      <!-- Add more options as needed -->
+    </select>
+    
+    <button id="convert-button">Convert</button>
+    
+    <div class="result">
+      <p>Converted Time:</p>
+      <span id="converted-time"></span>
+    </div>
+  </div>
+    <script src="luxon.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
